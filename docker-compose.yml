@@ -1,0 +1,17 @@
+services:
+  node-app:
+    container_name: express-app
+    build: .
+    volumes:
+      - ./src:/app/src:ro   # bind Mount
+    ports:
+      - "4000:4000"
+      
+
+# --> Docker Compose
+
+# docker compose up
+# Create and start the services
+
+# docker compose down
+# Stop and remove the containers and networks created by Compose

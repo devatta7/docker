@@ -14,7 +14,6 @@ CMD [ "npm" , "run" , "start:dev" ]
 
 # --> Docker Commands - Notes
 
-
 # docker build -t imageName .
 # Build an Image using the Dockerfile in the current directory
 
@@ -42,7 +41,6 @@ CMD [ "npm" , "run" , "start:dev" ]
 # %cd%
 # Get the current working directory in Windows CMD
 
-
 # docker run --name ContainerName -v "${PWD}:/app:ro" -v /app/node_modules -d -p 4000:4000 imageName
 # Run a Container with a Bind Mount, an Anonymous Volume for node_modules,
 # Detached mode, and port mapping
@@ -61,12 +59,6 @@ CMD [ "npm" , "run" , "start:dev" ]
 
 # docker logs ContainerName
 # Show the Container logs
-
-# docker logs -f ContainerName
-# Show and continuously follow the Container logs
-
-# docker rm ContainerName
-# Remove a stopped Container
 
 # docker rm -f ContainerName
 # Force remove a Container
